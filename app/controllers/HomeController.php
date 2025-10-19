@@ -3,10 +3,12 @@
 function HomeController ($method = "Index") {
     $parentDirectory = dirname(__DIR__ );
     
-    require_once realpath("$parentDirectory/core/View.php");
-    
+    echo "Hello from HomeController";
+
     // echo "Hello from HomeController, method : $method";
     // echo "<br/>";
+    
+    require_once realpath("$parentDirectory/core/View.php");
     
     function Index () {
         $data["title"] = "Home Page";
